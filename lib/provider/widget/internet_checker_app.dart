@@ -1,6 +1,6 @@
 part of '../../internet_checker.dart';
-class InternetCheckerAppProvider extends StatefulWidget {
-  const InternetCheckerAppProvider({super.key, required this.otherProviders, this.routes, this.home, this.initialRoute, this.title, this.debugShowCheckedModeBanner});
+class InternetDetectorAppProvider extends StatefulWidget {
+  const InternetDetectorAppProvider({super.key, required this.otherProviders, this.routes, this.home, this.initialRoute, this.title, this.debugShowCheckedModeBanner});
   final List<SingleChildWidget> otherProviders;
   final Map<String,WidgetBuilder>? routes;
   final String? initialRoute,title;
@@ -8,16 +8,17 @@ class InternetCheckerAppProvider extends StatefulWidget {
   final bool? debugShowCheckedModeBanner;
 
   @override
-  State<InternetCheckerAppProvider> createState() => _InternetCheckerAppProviderState();
+  State<InternetDetectorAppProvider> createState() => _InternetDetectorAppProviderState();
 }
 
-class _InternetCheckerAppProviderState extends State<InternetCheckerAppProvider> {
+class _InternetDetectorAppProviderState extends State<InternetDetectorAppProvider> {
   List <SingleChildWidget> otherProvider=[];
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     otherProvider.addAll(List.from(widget.otherProviders));
+    otherProvider.add(ChangeNotifierProvider.value(value: InternetCheckerProvider()));
   }
   @override
   Widget build(BuildContext context) {

@@ -1,4 +1,4 @@
-library internet_checker;
+library internet_detector;
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +9,7 @@ part 'getx/backend/internet_checker_controller.dart';
 part 'getx/widget/internet_checker_app.dart';
 part 'provider/widget/internet_checker_app.dart';
 
-class InternetChecker
+class InternetDetector
 {
   static InternetController internetController = Get.put(InternetController());
 }

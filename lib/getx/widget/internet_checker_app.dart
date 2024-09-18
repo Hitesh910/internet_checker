@@ -1,22 +1,22 @@
 part of '../../internet_checker.dart';
-class InternetCheckerAppGetX extends StatefulWidget {
-  const InternetCheckerAppGetX({super.key, this.title, this.routes, this.home, this.initialRoute, this.debugShowCheckedModeBanner});
+class InternetDetectorAppGetX extends StatefulWidget {
+  const InternetDetectorAppGetX({super.key, this.title, this.routes, this.home, this.initialRoute, this.debugShowCheckedModeBanner});
   final Map<String,WidgetBuilder>? routes;
   final String? initialRoute,title;
   final Widget? home;
   final bool? debugShowCheckedModeBanner;
 
   @override
-  State<InternetCheckerAppGetX> createState() => _InternetCheckerAppGetXState();
+  State<InternetDetectorAppGetX> createState() => _InternetDetectorAppGetXState();
 }
 
-class _InternetCheckerAppGetXState extends State<InternetCheckerAppGetX> {
+class _InternetDetectorAppGetXState extends State<InternetDetectorAppGetX> {
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    InternetChecker.internetController.firstTime();
-    InternetChecker.internetController.checkInternet();
+    InternetDetector.internetController.firstTime();
+    InternetDetector.internetController.checkInternet();
   }
   @override
   Widget build(BuildContext context) {

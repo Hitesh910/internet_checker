@@ -1,10 +1,10 @@
-name: internet_checker
+name: internet_detector
 description: "New flutter package."
-version: 0.0.1
+version: 1.0.0
 homepage:
-  https://github.com/Hitesh910/internet_checker/
+  https://github.com/Hitesh910/internet_detector/
 repository:
-  https://github.com/Hitesh910/internet_checker/
+  https://github.com/Hitesh910/internet_detector/
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
@@ -13,15 +13,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_lints: ^3.0.0
+  provider: ^6.1.2
+  get: ^4.6.6
+  connectivity_plus: ^6.0.5
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
-  provider: ^6.1.2
-  get: ^4.6.6
-  connectivity_plus: ^6.0.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
