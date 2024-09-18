@@ -1,7 +1,10 @@
 name: internet_checker
-description: "A new Flutter project."
+description: "New flutter package."
 version: 0.0.1
 homepage:
+  https://github.com/Hitesh910/internet_checker/
+repository:
+  https://github.com/Hitesh910/internet_checker/
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
