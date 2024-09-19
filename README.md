@@ -18,9 +18,8 @@
 
 To use this package, add the following dependencies to your `pubspec.yaml` file:
 
-### Using GetX
+<h1>Using GetX</h1>
 
-```yaml
 dependencies:
   connectivity_plus: ^X.X.X
   get: ^X.X.X
@@ -37,8 +36,9 @@ Obx(() {
 });
 
 
-### Using Provider
-```yaml
+<h1>Using Provider </h1>
+
+
 dependencies:
   connectivity_plus: ^X.X.X
   provider: ^X.X.X
