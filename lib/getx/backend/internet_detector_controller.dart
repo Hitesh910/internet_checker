@@ -1,4 +1,4 @@
-part of '../../internet_checker.dart';
+part of '../../internet_detector.dart';
 class InternetController extends GetxController
 {
   RxBool isInternet = false.obs;

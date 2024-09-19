@@ -1,4 +1,4 @@
-part of '../../internet_checker.dart';
+part of '../../internet_detector.dart';
 class InternetCheckerProvider with ChangeNotifier {
   Connectivity checkConnectivity = Connectivity();
   bool isInternet = true;

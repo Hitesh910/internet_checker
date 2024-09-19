@@ -1,4 +1,4 @@
-part of '../../internet_checker.dart';
+part of '../../internet_detector.dart';
 class InternetDetectorAppGetX extends StatefulWidget {
   const InternetDetectorAppGetX({super.key, this.title, this.routes, this.home, this.initialRoute, this.debugShowCheckedModeBanner});
   final Map<String,WidgetBuilder>? routes;

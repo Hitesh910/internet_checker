@@ -4,10 +4,10 @@ import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/single_child_widget.dart';
-part 'provider/backend/internet_checker_provider.dart';
-part 'getx/backend/internet_checker_controller.dart';
-part 'getx/widget/internet_checker_app.dart';
-part 'provider/widget/internet_checker_app.dart';
+part 'provider/backend/internet_detector_provider.dart';
+part 'getx/backend/internet_detector_controller.dart';
+part 'getx/widget/internet_detector_app.dart';
+part 'provider/widget/internet_detector_app.dart';
 
 class InternetDetector
 {

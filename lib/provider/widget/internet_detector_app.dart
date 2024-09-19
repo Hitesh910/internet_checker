@@ -1,4 +1,4 @@
-part of '../../internet_checker.dart';
+part of '../../internet_detector.dart';
 class InternetDetectorAppProvider extends StatefulWidget {
   const InternetDetectorAppProvider({super.key, required this.otherProviders, this.routes, this.home, this.initialRoute, this.title, this.debugShowCheckedModeBanner});
   final List<SingleChildWidget> otherProviders;
