@@ -37,7 +37,8 @@ Obx(() {
 });
 
 
-Using Provider
+### Using Provider
+```yaml
 dependencies:
   connectivity_plus: ^X.X.X
   provider: ^X.X.X
