@@ -1,13 +1,17 @@
 part of '../../internet_detector.dart';
+
 class InternetDetectorAppGetX extends StatefulWidget {
-  const InternetDetectorAppGetX({super.key, this.title, this.routes, this.home, this.initialRoute, this.debugShowCheckedModeBanner});
-  final Map<String,WidgetBuilder>? routes;
-  final String? initialRoute,title;
+  const InternetDetectorAppGetX(
+      {super.key, this.title, this.routes, this.home, this.initialRoute, this.debugShowCheckedModeBanner});
+
+  final Map<String, WidgetBuilder>? routes;
+  final String? initialRoute, title;
   final Widget? home;
   final bool? debugShowCheckedModeBanner;
 
   @override
-  State<InternetDetectorAppGetX> createState() => _InternetDetectorAppGetXState();
+  State<InternetDetectorAppGetX> createState() =>
+      _InternetDetectorAppGetXState();
 }
 
 class _InternetDetectorAppGetXState extends State<InternetDetectorAppGetX> {
@@ -18,29 +22,29 @@ class _InternetDetectorAppGetXState extends State<InternetDetectorAppGetX> {
     InternetDetector.internetController.firstTime();
     InternetDetector.internetController.checkInternet();
   }
+
   @override
   Widget build(BuildContext context) {
-    return Obx(() =>
-    widget.home==null&&widget.routes==null?
+    return widget.home == null && widget.routes == null ?
     GetMaterialApp(
-      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner??true,
-      title: widget.title??'Flutter Demo',
-     ):
-    widget.routes!=null&&widget.home!=null?
+      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner ?? true,
+      title: widget.title ?? 'Flutter Demo',
+    ) :
+    widget.routes != null && widget.home != null ?
     GetMaterialApp(
-      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner??true,
-      title: widget.title??'Flutter Demo',
+      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner ?? true,
+      title: widget.title ?? 'Flutter Demo',
       home: widget.home,
       routes: widget.routes!,
-      initialRoute: widget.initialRoute??"/",):
-    widget.home==null&&widget.routes!=null?GetMaterialApp(
-      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner??true,
-      title: widget.title??'Flutter Demo',
+      initialRoute: widget.initialRoute ?? "/",) :
+    widget.home == null && widget.routes != null ? GetMaterialApp(
+      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner ?? true,
+      title: widget.title ?? 'Flutter Demo',
       routes: widget.routes!,
-      initialRoute: widget.initialRoute??"/",):
+      initialRoute: widget.initialRoute ?? "/",) :
     GetMaterialApp(
-      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner??true,
-      title: widget.title??'Flutter Demo',
-      home: widget.home,));
+      debugShowCheckedModeBanner: widget.debugShowCheckedModeBanner ?? true,
+      title: widget.title ?? 'Flutter Demo',
+      home: widget.home,);
   }
 }
